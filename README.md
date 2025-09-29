@@ -56,12 +56,3 @@ Autores
 Base do projeto original: João Pedro Rodrigues Souza e Matheus de Souza Barbosa
 
 Adaptação e funcionalidades para alunos atípicos: Marcos Guilherme
-
-yaml
-Copiar código
-
----
-
-Se você quiser, posso **inserir também o logo do projeto e os badges de status**, igual no README original, deixando ele **mais visual e apresentável para a prefeitura**.  
-
-Quer que eu faça isso?
