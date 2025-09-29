@@ -14,8 +14,6 @@
 
 <p>Este projeto utiliza como base o <strong>EXITUS original</strong> disponível em <a href="https://github.com/matheusdesouzab/Exitus">https://github.com/matheusdesouzab/Exitus</a> e está sendo adaptado para atender ao sistema de gerenciamento escolar de <strong>alunos atípicos</strong>, incluindo funcionalidades de dashboard, login para pais e acompanhamento dos seus filhos atípicos.</p>
   
-<p>O Exitus é um Sistema de Gestão Escolar originalmente desenvolvido em 2021 para o TCC da equipe no curso de Técnico de Informática pelo CETEPI-I da cidade de Paulo Afonso-BA.</p>
-  
 <p>O projeto original possui três portais voltados para gestores da escola, docentes e alunos. Nesta versão adaptada, adicionamos funcionalidades para atender a necessidades específicas de alunos atípicos e seus responsáveis.</p>
 
 ## Demonstração da Aplicação
