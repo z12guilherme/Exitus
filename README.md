@@ -44,8 +44,6 @@ Insira os dados iniciais usando initial_data_insertion_script.sql.
 
 Acesse a aplicação no navegador via URL:
 
-arduino
-Copiar código
 http://localhost:8000
 O primeiro acesso é pelo portal do admin:
 
