@@ -1,134 +1,65 @@
-<div align="center"> <img style="margin-bottom: 40px" src="https://user-images.githubusercontent.com/60266964/162435563-436fa05e-7e66-4419-8811-81ab90d758fa.png" width="300px"> </div> <div align="center"> <img src="http://img.shields.io/static/v1?label=STATUS&message=Finalizado&color=BLUE&style=for-the-badge"/> </div>
-Manual de Instalação e Uso – Exitus Adaptado
-1. Pré-requisitos
+# Exitus Adaptado para Alunos Atípicos
 
-Certifique-se de ter instalado:
+Este projeto utiliza como base o [EXITUS original](https://github.com/matheusdesouzab/Exitus) e está sendo adaptado para atender ao sistema de gerenciamento escolar de **alunos atípicos**, incluindo funcionalidades de **dashboard**, **login para pais** e **acompanhamento dos seus filhos atípicos**.
 
-Servidor Web (Apache, Nginx ou PHP embutido)
+O projeto original possui três portais voltados para gestores da escola, docentes e alunos. Nesta versão adaptada, adicionamos funcionalidades para atender a necessidades específicas de alunos atípicos e seus responsáveis.
 
-PHP >= 7.4
+---
 
-MySQL / MariaDB
+## Demonstração da Aplicação
 
-Git
+O projeto possui diversas funcionalidades. Para uma visão geral, disponibilizamos um link para um vídeo de demonstração do projeto original:
 
-Git LFS (para arquivos grandes)
+[Demostração do projeto no YouTube](https://www.youtube.com/watch?v=MFScHaBRtDw&t=1984s)
 
-Composer (para dependências PHP)
+---
 
-2. Clonando o repositório
+## Tecnologias utilizadas
 
-git clone https://github.com/z12guilherme/Exitus.git
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
+- Git
+- Sass
 
-cd Exitus
-git lfs install
-git lfs pull
+---
 
-Isso garante que todos os arquivos, incluindo PDFs e a pasta vendor/, sejam baixados corretamente.
+## Acesso ao Projeto
 
-3. Configurando o banco de dados
+Para testar o projeto no seu computador, faça o download deste repositório.
 
-Crie o banco de dados:
+1. Crie o banco de dados:
 
+```sql
 CREATE DATABASE Exitus;
+Se desejar outro nome, altere as pré-definições do arquivo Connection.php.
 
-Ajuste o arquivo config.php ou Connection.php com o nome do banco, usuário e senha:
+Crie as tabelas usando o arquivo database_creation_script.sql.
 
-$host = 'localhost';
-$user = 'root';
-$password = 'sua_senha';
-$dbname = 'Exitus';
+Insira os dados iniciais usando initial_data_insertion_script.sql.
 
-Crie as tabelas:
+Acesse a aplicação no navegador via URL:
 
-mysql -u root -p Exitus < database_creation_script.sql
-
-Insira os dados iniciais:
-
-mysql -u root -p Exitus < initial_data_insertion_script.sql
-
-4. Rodando o projeto
-
-No terminal, acesse a pasta public e execute:
-
-php -S localhost:8000
-
-Acesse o sistema no navegador:
-
+arduino
+Copiar código
 http://localhost:8000
-
-5. Primeiro acesso
-
-Portal Admin (já existente no Exitus original):
+O primeiro acesso é pelo portal do admin:
 
 Usuário	Código de acesso
 Usuário Padrão	867532
 
-Configure escolas, turmas, professores e cadastre alunos.
-
-Os alunos cadastrados podem acessar o portal do aluno.
-
-Professores podem lançar notas, faltas e avisos.
-
-6. Funcionalidades existentes (EXITUS original)
-Funcionalidade	Status
-Portal Admin (cadastra alunos, turmas, professores)	✅
-Portal Docente (lança notas, faltas, avisos)	✅
-Portal Aluno (consulta notas, faltas, comunicados)	✅
-Scripts de criação e inserção do banco	✅
-Login e autenticação básica	✅
-7. Funcionalidades da sua adaptação
-Funcionalidade	Status
-Dashboard específico para alunos atípicos	❌ A implementar
-Login de pais / responsáveis	❌ A implementar
-Acompanhamento detalhado de filhos atípicos	❌ A implementar
-
-Essas funcionalidades serão desenvolvidas sobre a base existente do Exitus.
-
-8. Cadastro de alunos
-
-No portal do admin: Admin > Alunos > Cadastrar
-
-Preencha dados do aluno (nome, turma, RA etc.)
-
-Clique em Salvar
-
-O aluno agora aparece no portal do docente e pode ser vinculado a pais/responsáveis (adaptado).
-
-<div align="center"> <img src="https://user-images.githubusercontent.com/60266964/173252157-41a78e83-065d-4c35-ae1d-fc2666032c1c.png" width="400px"/> <p>:camera: Tela de home do portal do administrador</p> </div>
-9. Cadastro de pais / responsáveis (a implementar)
-
-No portal do admin: Responsáveis > Cadastrar
-
-Vincule os responsáveis aos alunos correspondentes
-
-Eles receberão login para acompanhar o desempenho dos filhos.
-
-10. Observações finais
-
-Faça backup do banco regularmente
-
-Não versionar arquivos sensíveis como config.php com senhas reais
-
-Crie branches separados para implementar novas funcionalidades:
-
-git checkout -b adaptacao-alunos-atipicos
-
-Teste cada módulo antes de integrar ao sistema principal.
-
-11. Tecnologias utilizadas
-
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40"/></code>
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40"/></code>
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" /></code>
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40" /></code>
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="50" height="50" /></code>
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" /></code>
-<code><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="50" height="50" /></code>
-
-
-12. Autores
-
+Autores
 Base do projeto original: João Pedro Rodrigues Souza e Matheus de Souza Barbosa
 
 Adaptação e funcionalidades para alunos atípicos: Marcos Guilherme
+
+yaml
+Copiar código
+
+---
+
+Se você quiser, posso **inserir também o logo do projeto e os badges de status**, igual no README original, deixando ele **mais visual e apresentável para a prefeitura**.  
+
+Quer que eu faça isso?
