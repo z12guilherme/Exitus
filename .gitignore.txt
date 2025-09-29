@@ -1,0 +1,14 @@
+# Configuração sensível
+config.php
+
+# Dependências externas
+vendor/
+
+# Arquivos grandes
+*.sql
+*.pdf
+*.zip
+*.tar.gz
+
+# Logs
+*.log
